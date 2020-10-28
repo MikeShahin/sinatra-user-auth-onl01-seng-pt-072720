@@ -1,8 +1,9 @@
-class CreateUsers < ActiveRecord::Migration[5.1]
+class CreateUsers < ActiveRecord::Migration[4.2]
   def change
-    create_table :articles do |t|
-      t.string :title
-      t.string :content
+    create_table :users do |t|
+      t.string :name
+      t.string :email
+      t.string :password
 
     end
   end
